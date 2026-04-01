@@ -1,6 +1,0 @@
-asset_type,asset_value,user_savings,loan_interest_rate,loan_tenure_years,down_payment_percentage,monthly_emi_capability,investment_preference
-home,7500000,1500000,7.0,20,20,60000,aggressive
-house,5000000,1000000,8.5,15,20,45000,moderate-risk
-home,7500000,1500000,7.0,20,20,60000,aggressive
-property,8000000,2000000,9.0,25,25,40000,aggressive
-Property,8000000,2000000,9.0,25,25,40000,aggressive
