@@ -1,0 +1,17 @@
+2026-03-26 15:41:39,497 - ERROR - Extraction failed: 2 validation errors for ExtractedData
+loan_interest_rate
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+loan_tenure_years
+  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/int_type
+2026-03-26 17:05:53,950 - ERROR - Extraction failed: 3 validation errors for ExtractedData
+loan_interest_rate
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+loan_tenure_years
+  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/int_type
+monthly_emi_capability
+  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/int_type

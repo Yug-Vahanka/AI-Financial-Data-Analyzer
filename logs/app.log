@@ -1,0 +1,18 @@
+2026-03-26 15:41:35,564 - INFO - /extract API called | Request number: 1
+2026-03-26 15:41:35,565 - INFO - Calling Gemini AI...
+2026-03-26 15:41:39,493 - INFO - Gemini response parsed successfully
+2026-03-26 15:41:39,497 - ERROR - Extraction failed: 2 validation errors for ExtractedData
+loan_interest_rate
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+loan_tenure_years
+  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/int_type
+2026-03-26 15:41:54,002 - INFO - /records API called
+2026-03-26 15:41:54,013 - INFO - Fetched 2 records successfully
+2026-03-26 15:46:04,115 - INFO - /extract API called | Request number: 2
+2026-03-26 15:46:04,117 - INFO - Calling Gemini AI...
+2026-03-26 15:46:07,237 - WARNING - Gemini call failed, retrying... Error: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+2026-03-26 15:46:08,247 - INFO - Calling Gemini AI...
+2026-03-26 15:46:11,808 - INFO - Gemini response parsed successfully
+2026-03-26 15:46:11,835 - INFO - Data extracted and saved successfully
