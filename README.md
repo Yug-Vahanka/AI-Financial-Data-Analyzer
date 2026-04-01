@@ -2,18 +2,30 @@
 
 ## 📌 Overview
 
-AI Financial Data Analyzer is a FastAPI-based application that extracts, processes, and analyzes financial data using intelligent services. It provides structured insights, logging, and efficient data handling for financial datasets.
+AI Financial Data Analyzer is a FastAPI-based backend application that extracts, processes, and analyzes financial information from user input using AI-driven logic. The system converts unstructured financial text into structured insights, stores results, and maintains logs for tracking.
 
 ---
 
-##  Features
+## 📸 Screenshots
 
-* 📊 Financial data extraction and processing
-* 🤖 AI-powered analysis
-* 🗂️ Structured API endpoints
-* 📁 Logging system (success & error logs)
-* 💾 Database integration (SQLite)
-* 📈 CSV and JSON data handling
+### API Documentation (Swagger UI)
+
+![API Docs](Image/Screenshot 2026-04-01 142216.png)
+
+### Example Output
+
+![Output](Image/Screenshot 2026-04-01 142255.png)
+
+---
+
+## 🎯 Features
+
+* 📊 Extract financial data from natural language input
+* 🤖 AI-powered data processing and analysis
+* 🗂️ Structured REST API endpoints
+* 📁 Logging system (error.log, success.log)
+* 💾 SQLite database integration
+* 📈 CSV and JSON data storage & handling
 
 ---
 
@@ -22,7 +34,7 @@ AI Financial Data Analyzer is a FastAPI-based application that extracts, process
 * **Backend:** Python, FastAPI
 * **Database:** SQLite
 * **Libraries:** Pydantic, Uvicorn
-* **Others:** Logging, CSV handling
+* **Others:** Logging, CSV handling, JSON processing
 
 ---
 
@@ -30,15 +42,16 @@ AI Financial Data Analyzer is a FastAPI-based application that extracts, process
 
 ```
 app/
- ├── core/          # Config, database, security
+ ├── core/          # Configuration, database, security
  ├── models/        # Database models & schemas
- ├── routes/        # API routes
- ├── services/      # AI & business logic
- ├── utils/         # Helper functions
- └── main.py        # Entry point
+ ├── routes/        # API endpoints
+ ├── services/      # AI processing logic
+ ├── utils/         # Helper utilities (logger, CSV handler)
+ └── main.py        # FastAPI entry point
 
 data/               # Database & datasets
-logs/               # Log files
+logs/               # Application logs
+Image/              # Screenshots
 requirements.txt    # Dependencies
 ```
 
@@ -49,18 +62,11 @@ requirements.txt    # Dependencies
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/AI-Financial-Data-Analyzer.git
+git clone https://github.com/Yug-Vahanka/AI-Financial-Data-Analyzer.git
 cd AI-Financial-Data-Analyzer
 ```
 
-### 2️⃣ Create virtual environment (optional but recommended)
-
-```bash
-python -m venv venv
-venv\Scripts\activate   # Windows
-```
-
-### 3️⃣ Install dependencies
+### &#x20;2️⃣    Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -80,7 +86,7 @@ uvicorn app.main:app --reload
 http://127.0.0.1:8000
 ```
 
-👉 API Docs:
+👉 API Docs (Swagger UI):
 
 ```
 http://127.0.0.1:8000/docs
@@ -88,27 +94,47 @@ http://127.0.0.1:8000/docs
 
 ---
 
-## 📌 API Functionality
+## 🔗 API Endpoints
 
-* Extract financial data
-* Process and analyze data
-* Store results in database
-* Generate logs and metrics
+* **GET /** → Check API status
+* **POST /extract** → Extract financial insights from user input
+* **GET /records** → Retrieve stored financial records
+
+---
+
+## ⚙️ How It Works
+
+1. User sends financial text input
+2. FastAPI receives request
+3. AI service extracts key financial values
+4. Data is structured and processed
+5. Results are stored in database
+6. Logs are generated for monitoring
 
 ---
 
 ## 🔒 Security Note
 
-* `.env` file is ignored using `.gitignore`
-* Sensitive data is not uploaded to GitHub
+* `.env` file is excluded using `.gitignore`
+* Sensitive information is not pushed to GitHub
 
 ---
 
 ## 🎓 Use Cases
 
-* Financial data analysis
+* Financial planning analysis
+* Loan & EMI estimation systems
+* AI-based data extraction projects
 * Backend API development practice
-* AI-based data processing projects
+
+---
+
+## 🚀 Future Improvements
+
+* Add Streamlit UI for frontend
+* Deploy project on cloud (Render/AWS)
+* Add user authentication system
+* Improve AI accuracy and validation
 
 ---
 
